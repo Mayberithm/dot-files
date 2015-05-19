@@ -1,0 +1,36 @@
+" This is a sample .txt file of my current .vimrc setup.
+" The primary purpose of this file is to copy paste into a new machine for temporary use.
+
+let mapleader = "\<Space>"
+
+" THE BASICS
+syntax on          " colors
+set ruler          " rows, columns in bottom bar
+set number         " numbered lines
+set list           " show whitespace charactors
+set autoindent     " carry indentation to next line
+set laststatus=2   " always show status bar
+set hlsearch       " highlight all search pattern matches
+
+" TAB SETTINGS
+set expandtab      " all tabs are spaces
+set tabstop=3      " hard tabstop 3 spaces
+set shiftwidth=3   " indent 3 spaces
+
+" toggles relative numbers
+nnoremap <leader>l :set rnu! rnu? <cr>
+
+" F2 converts tabs to spaces, then saves
+map <F2> :retab <CR> :w <CR>
+
+" Disable arrow keys in insert mode
+ino <up> <Nop>
+ino <down> <Nop>
+ino <left> <Nop>
+ino <right> <Nop>
+
+" arrow changes windows
+nmap <silent> <Up> :wincmd k<CR>
+nmap <silent> <Down> :wincmd j<CR>
+nmap <silent> <Left> :wincmd h<CR>
+nmap <silent> <Right> :wincmd l<CR>
