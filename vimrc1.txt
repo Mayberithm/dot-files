@@ -1,4 +1,3 @@
-" This is a sample .txt file of my current .vimrc setup.
 " The primary purpose of this file is to copy paste into a new machine for temporary use.
 
 let mapleader = "\<Space>"
