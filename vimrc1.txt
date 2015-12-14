@@ -33,3 +33,41 @@ nmap <silent> <Up> :wincmd k<CR>
 nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
+
+" don't copy this into the vimrc file
+" it's a reminder on how clearfix works
+.clearfix::after {
+clear: both;
+content: " ";
+display: block;
+height: 0;
+overflow: hidden;
+}
+
+" HTML pointers:
+" don't vimrc this either
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="content-type"
+         content="text/html;charset=utf-8" />
+
+   <link rel="stylesheet" href="LINK-HERE" type="text/css" />
+   <title></title>
+</head>
+
+<body>
+<div><!--wrapper-->
+
+</div><!--closes wrapper-->
+</body>
+</html>
+
+" other pointers
+For repetitive long entries:
+remember that you can use a code in place, then :%s/ / /gc
+
+ALSO, get your spare paper out for jotting notes
