@@ -34,6 +34,18 @@ nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
 
+------------------------------------------------------------------
+1.Log on to D2L and download zip file.
+2.Pull vimrc from github.
+3.Unzip folder, decide what to open and/or upload.
+4.Get server login info from handout.
+5.Open PuTTY and winSCP. Log in.
+6.Set .vimrc file.
+7.Organize windows, complete uploads, make file structure.
+8.Read handout in its entirety; jot down notes.
+9.Mentally plan a course of action; jot down notes.
+10.Begin coding.
+
 " don't copy this into the vimrc file
 " it's a reminder on how clearfix works
 .clearfix::after {
@@ -70,4 +82,4 @@ overflow: hidden;
 For repetitive long entries:
 remember that you can use a code in place, then :%s/ / /gc
 
-ALSO, get your spare paper out for jotting notes
+ALSO, close your standalones
