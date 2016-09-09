@@ -1,26 +1,28 @@
 " The primary purpose of this file is to copy paste into a new machine for temporary use.
 
+" setting the leader key
 let mapleader = "\<Space>"
 
 " THE BASICS
-syntax on          " colors
 set ruler          " rows, columns in bottom bar
 set number         " numbered lines
-set list           " show whitespace charactors
 set autoindent     " carry indentation to next line
 set laststatus=2   " always show status bar
 set hlsearch       " highlight all search pattern matches
 
-" TAB SETTINGS
+" COLORS
+syntax on          " colors on
+" colors koehler    " color setting for a dark background
+
+" TABBING
 set expandtab      " all tabs are spaces
 set tabstop=3      " hard tabstop 3 spaces
 set shiftwidth=3   " indent 3 spaces
 
-" toggles relative numbers
-nnoremap <leader>l :set rnu! rnu? <cr>
-
-" F2 converts tabs to spaces, then saves
-map <F2> :retab <CR> :w <CR>
+" WHITESPACE
+set list           " show whitespace charactors
+set listchars=space:·,eol:$,tab:>-
+   "NOTE : space is Unix only. Remove the above line if needed.
 
 " Disable arrow keys in insert mode
 ino <up> <Nop>
@@ -28,8 +30,23 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
-" arrow changes windows
+" arrow keys change windows
 nmap <silent> <Up> :wincmd k<CR>
 nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
+
+" toggles relative numbers
+nnoremap <leader>l :set rnu! rnu? <CR>
+
+" F2 converts tabs to spaces, then saves
+map <F2> :retab <CR> :w <CR>
+
+" insert line below, and stay on that line
+nnoremap <Enter> o<esc>
+
+" insert line above, and stay on that line
+nnoremap <leader><Enter> O<esc>
+
+" HINTS
+" <CR> = Carraige Return
