@@ -12,7 +12,7 @@ set hlsearch       " highlight all search pattern matches
 
 " COLORS
 syntax on          " colors on
-" colors koehler    " color setting for a dark background
+"colors koehler     " color setting for a dark background
 
 " TABBING
 set expandtab      " all tabs are spaces
@@ -42,11 +42,11 @@ nnoremap <leader>l :set rnu! rnu? <CR>
 " F2 converts tabs to spaces, then saves
 map <F2> :retab <CR> :w <CR>
 
-" insert line below, and stay on that line
-nnoremap <Enter> o<esc>
+" insert line below, and stay on original line
+nnoremap <Enter> o<esc>k
 
-" insert line above, and stay on that line
-nnoremap <leader><Enter> O<esc>
+" insert line above, and stay on original line
+nnoremap <leader><Enter> O<esc>j
 
 " HINTS
 " <CR> = Carraige Return
