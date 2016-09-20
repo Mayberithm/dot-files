@@ -12,17 +12,20 @@ set hlsearch       " highlight all search pattern matches
 
 " COLORS
 syntax on          " colors on
-"colors koehler     " color setting for a dark background
+"colors koehler    " color setting for a dark background
 
 " TABBING
 set expandtab      " all tabs are spaces
 set tabstop=3      " hard tabstop 3 spaces
 set shiftwidth=3   " indent 3 spaces
 
+" F2 converts tabs to spaces, then saves
+map <F2> :retab <CR> :w <CR>
+
 " WHITESPACE
 set list           " show whitespace charactors
 set listchars=space:·,eol:$,tab:>-
-   "NOTE : space is Unix only. Remove the above line if needed.
+   "NOTE : space is Unix only. Remove on any other OS
 
 " Disable arrow keys in insert mode
 ino <up> <Nop>
@@ -39,14 +42,16 @@ nmap <silent> <Right> :wincmd l<CR>
 " toggles relative numbers
 nnoremap <leader>l :set rnu! rnu? <CR>
 
-" F2 converts tabs to spaces, then saves
-map <F2> :retab <CR> :w <CR>
-
-" insert line below, and stay on original line
+" insert line below, and stay on that line
 nnoremap <Enter> o<esc>k
 
-" insert line above, and stay on original line
+" insert line above, and stay on that line
 nnoremap <leader><Enter> O<esc>j
+
+" enables script in HTML, XML, and PHP files
+" Wraps visual selection with html style tag
+" Will ask user for inputs (tag and attribute)
+au Filetype html,xml,php source ~/.vim/scripts/wrap-w-html-tag.vim
 
 " HINTS
 " <CR> = Carraige Return
