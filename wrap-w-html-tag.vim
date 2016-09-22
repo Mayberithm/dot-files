@@ -39,4 +39,5 @@ endfunction
 " proper usage of word (tag or element?)
 " make a flowchart, bruh
 " learn git cmds, srsly
+" add leader-W to make multi-line tag
 
