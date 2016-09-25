@@ -1,4 +1,4 @@
-" The primary purpose of this file is to copy paste into a new machine for temporary use.
+"---  vimrc file for Mayberithm
 
 " setting the leader key
 let mapleader = "\<Space>"
@@ -19,9 +19,6 @@ set expandtab      " all tabs are spaces
 set tabstop=3      " hard tabstop 3 spaces
 set shiftwidth=3   " indent 3 spaces
 
-" F2 converts tabs to spaces, then saves
-map <F2> :retab <CR> :w <CR>
-
 " WHITESPACE
 set list           " show whitespace charactors
 set listchars=space:·,eol:$,tab:>-
@@ -39,6 +36,18 @@ nmap <silent> <Down> :wincmd j<CR>
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
 
+" RE-MAPPINGS
+" ==================================================
+
+" fixes accidental capitalization for save commands
+:command W w
+:command Q q
+:command WQ wq
+:command Wq wq
+
+" F2 converts tabs to spaces, then saves
+map <F2> :retab <CR> :w <CR>
+
 " toggles relative numbers
 nnoremap <leader>l :set rnu! rnu? <CR>
 
@@ -47,6 +56,9 @@ nnoremap <Enter> o<esc>k
 
 " insert line above, and stay on that line
 nnoremap <leader><Enter> O<esc>j
+
+" SCRIPT INITIATION
+" ==================================================
 
 " enables script in HTML, XML, and PHP files
 " Wraps visual selection with html style tag
