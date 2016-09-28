@@ -51,10 +51,10 @@ map <F2> :retab <CR> :w <CR>
 " toggles relative numbers
 nnoremap <leader>l :set rnu! rnu? <CR>
 
-" insert line below, and stay on that line
+" insert line below, and stay on original line
 nnoremap <Enter> o<esc>k
 
-" insert line above, and stay on that line
+" insert line above, and stay on original line
 nnoremap <leader><Enter> O<esc>j
 
 " SCRIPT INITIATION
