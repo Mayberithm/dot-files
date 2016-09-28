@@ -4,10 +4,10 @@
 let mapleader = "\<Space>"
 
 " THE BASICS
-set ruler          " rows, columns in bottom bar
+set laststatus=2   " always show status bar
+set ruler          " rows, columns in status bar
 set number         " numbered lines
 set autoindent     " carry indentation to next line
-set laststatus=2   " always show status bar
 set hlsearch       " highlight all search pattern matches
 
 " COLORS
