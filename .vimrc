@@ -13,6 +13,7 @@ set hlsearch       " highlight all search pattern matches
 " COLORS
 syntax on          " colors on
 "colors koehler    " color setting for a dark background
+colors peachpuff   " home mac
 
 " TABBING
 set expandtab      " all tabs are spaces
