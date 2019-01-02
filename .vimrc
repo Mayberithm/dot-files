@@ -49,7 +49,7 @@ nmap <silent> <Right> :wincmd l<CR>
 :command Wq :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 " F2 converts tabs to spaces, then saves
-map F2 :retab <CR> :w <CR>
+map <F2> :retab <CR> :w <CR>
 
 " toggles relative numbers
 nnoremap <leader>l :set rnu! rnu? <CR>
